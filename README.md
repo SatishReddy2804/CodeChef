@@ -25,7 +25,7 @@
 
 | Language | Solutions |
 |:---:|:---:|
-| C++ | **1** |
+| Java | **1** |
 
 ## 📂 Repository Structure
 
