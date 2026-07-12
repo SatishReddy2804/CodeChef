@@ -79,7 +79,7 @@ Since the response code is not $404$, website returns `FOUND`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-12T04:16:53.815Z  
+**Submitted:** 2026-07-12T04:16:57.775Z  
 
 ```java
 import java.util.*;
