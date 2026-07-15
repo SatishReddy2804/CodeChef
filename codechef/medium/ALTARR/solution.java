@@ -9,12 +9,12 @@ class Codechef
 		// your code goes here
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
-        int c=0;
         while(t-->0)
         {
+            int c=0;
             int n=sc.nextInt();
             int arr[]=new int[n];
-            for(int i=0;i<n;i++);
+            for(int i=0;i<n;i++)
             {
                 arr[i]=sc.nextInt();
             }
@@ -41,6 +41,14 @@ class Codechef
                 if(x==y)
                 {
                     c++;
+                    if(y==0)
+                    {
+                        y=1;
+                    }
+                    else
+                    {
+                        y=0;
+                    }
                 }
                 else
                 {
