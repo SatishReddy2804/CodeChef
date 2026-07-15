@@ -51,7 +51,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:18:09.706Z  
+**Submitted:** 2026-07-15T15:02:05.151Z  
 
 ```java
 import java.util.*;
@@ -67,33 +67,51 @@ class Codechef
         int t=sc.nextInt();
         while(t-->0)
         {
+            int c=0;
             int n=sc.nextInt();
             int arr[]=new int[n];
             for(int i=0;i<n;i++)
             {
                 arr[i]=sc.nextInt();
             }
-            int x=0;
-            int y=1;
-            for(int i=0;i<arr.length;i++)
+            int x=-1;
+            int y=-1;
+            if(arr[0]%2==0)
             {
-                if(arr[i]%2!=y)
-                {
-                    x++;
-                }
-                y=1-y;
+                x=0;
             }
-            int a=0;
-            int b=0;
-            for(int i=0;i<arr.length;i++)
+            else
             {
-                if(arr[i]%2!=b)
-                {
-                    a++;
-                }
-                b=1-b;
+                x=1;
             }
-            System.out.println(Math.min(x,a));
+            for(int i=1;i<arr.length;i++)
+            {
+                if(arr[i]%2==0)
+                {
+                    y=0;
+                }
+                else
+                {
+                    y=1;
+                }
+                if(x==y)
+                {
+                    c++;
+                    if(y==0)
+                    {
+                        x=1;
+                    }
+                    else
+                    {
+                        x=0;
+                    }
+                }
+                else
+                {
+                    x=y;
+                }
+            }
+            System.out.println(c);
         }
 	}
 }
