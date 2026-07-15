@@ -43,11 +43,11 @@ class Codechef
                     c++;
                     if(y==0)
                     {
-                        y=1;
+                        x=1;
                     }
                     else
                     {
-                        y=0;
+                        x=0;
                     }
                 }
                 else
