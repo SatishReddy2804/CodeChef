@@ -17,21 +17,33 @@ class Codechef
             {
                 arr[i]=sc.nextInt();
             }
-            int c=0;
-            int x=arr[0]%2;
-            for(int i=1;i<arr.length;i++)
+            int x=0;
+            int y=1;
+            for(int i=0;i<arr.length;i++)
             {
-                if(arr[i]%2==x)
+                if(arr[i]%2!=y)
                 {
-                    c++;
-                    x=1-x;
+                    x++;
                 }
                 else
                 {
-                    x=arr[i]%2;
+                    y=1-y;
                 }
             }
-            System.out.println(c);
+            int a=0;
+            int b=0;
+            for(int i=0;i<arr.length;i++)
+            {
+                if(arr[i]%2!=b)
+                {
+                    a++;
+                }
+                else
+                {
+                    b=1-b;
+                }
+            }
+            System.out.println(Math.min(x,a));
         }
 	}
 }
