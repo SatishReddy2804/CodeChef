@@ -9,15 +9,16 @@ class Codechef
 		// your code goes here
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
+        sc.nextLine();
         while(t-->0)
         {
             int x=sc.nextInt();
+            sc.nextLine();
             String s=sc.nextLine();
             StringBuilder sb=new StringBuilder(s);
-            for(int i=0;i<s.length();i++)
+            for(int i=0;i<sb.length();i++)
             {
-                char ch=sb.charAt(i);
-                if(ch=='z');
+                if(sb.charAt(i)=='z');
                 {
                     sb.setCharAt(i,'a');
                 }
