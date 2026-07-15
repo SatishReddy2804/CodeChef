@@ -41,14 +41,7 @@ class Codechef
                 if(x==y)
                 {
                     c++;
-                    if(y==0)
-                    {
-                        x=1;
-                    }
-                    else
-                    {
-                        x=0;
-                    }
+                    x=1-x;
                 }
                 else
                 {
