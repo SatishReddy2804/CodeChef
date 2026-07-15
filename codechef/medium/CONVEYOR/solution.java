@@ -7,6 +7,20 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
+        import java.util.*;
 
-	}
+class Codechef {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            int n=sc.nextInt();
+            int p=sc.nextInt();
+            String s=sc.next();
+            int left=0,right=0;
+            for(int i=0;i<p;i++) if(s.charAt(i)!='L') left++;
+            for(int i=p-1;i<n;i++) if(s.charAt(i)!='R') right++;
+            System.out.println(Math.min(left,right));
+        }
+    }
 }
