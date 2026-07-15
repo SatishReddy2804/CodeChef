@@ -51,7 +51,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:16:31.162Z  
+**Submitted:** 2026-07-15T15:18:09.706Z  
 
 ```java
 import java.util.*;
@@ -81,10 +81,7 @@ class Codechef
                 {
                     x++;
                 }
-                else
-                {
-                    y=1-y;
-                }
+                y=1-y;
             }
             int a=0;
             int b=0;
@@ -94,10 +91,7 @@ class Codechef
                 {
                     a++;
                 }
-                else
-                {
-                    b=1-b;
-                }
+                b=1-b;
             }
             System.out.println(Math.min(x,a));
         }
