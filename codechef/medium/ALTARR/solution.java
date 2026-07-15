@@ -11,24 +11,41 @@ class Codechef
         int t=sc.nextInt();
         while(t-->0)
         {
+            int c=0;
             int n=sc.nextInt();
             int arr[]=new int[n];
             for(int i=0;i<n;i++)
             {
                 arr[i]=sc.nextInt();
             }
-            int c=0;
-            int x=arr[0]%2;
+            int x=-1;
+            int y=-1;
+            if(arr[0]%2==0)
+            {
+                x=0;
+            }
+            else
+            {
+                x=1;
+            }
             for(int i=1;i<arr.length;i++)
             {
-                if(arr[i]%2==x)
+                if(arr[i]%2==0)
+                {
+                    y=0;
+                }
+                else
+                {
+                    y=1;
+                }
+                if(x==y)
                 {
                     c++;
                     x=1-x;
                 }
                 else
                 {
-                    x=arr[i]%2;
+                    x=y;
                 }
             }
             System.out.println(c);
