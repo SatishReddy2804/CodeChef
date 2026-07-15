@@ -62,19 +62,14 @@ RRLLRLRL
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T15:27:04.682Z  
+**Submitted:** 2026-07-15T15:28:42.940Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-        import java.util.*;
+
 
 class Codechef {
     public static void main(String[] args) {
