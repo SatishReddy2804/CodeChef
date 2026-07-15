@@ -51,7 +51,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-15T14:58:43.145Z  
+**Submitted:** 2026-07-15T15:01:57.148Z  
 
 ```java
 import java.util.*;
@@ -99,11 +99,11 @@ class Codechef
                     c++;
                     if(y==0)
                     {
-                        y=1;
+                        x=1;
                     }
                     else
                     {
-                        y=0;
+                        x=0;
                     }
                 }
                 else
