@@ -11,44 +11,33 @@ class Codechef
         int t=sc.nextInt();
         while(t-->0)
         {
-            int c=0;
             int n=sc.nextInt();
             int arr[]=new int[n];
             for(int i=0;i<n;i++)
             {
                 arr[i]=sc.nextInt();
             }
-            int x=-1;
-            int y=-1;
-            if(arr[0]%2==0)
+            int x=0;
+            int y=1;
+            for(int i=0;i<arr.length;i++)
             {
-                x=0;
+                if(arr[i]%2!=y)
+                {
+                    x++;
+                }
+                y=1-y;
             }
-            else
+            int a=0;
+            int b=0;
+            for(int i=0;i<arr.length;i++)
             {
-                x=1;
+                if(arr[i]%2!=b)
+                {
+                    a++;
+                }
+                b=1-b;
             }
-            for(int i=1;i<arr.length;i++)
-            {
-                if(arr[i]%2==0)
-                {
-                    y=0;
-                }
-                else
-                {
-                    y=1;
-                }
-                if(x==y)
-                {
-                    c++;
-                    x=1-x;
-                }
-                else
-                {
-                    x=y;
-                }
-            }
-            System.out.println(c);
+            System.out.println(Math.min(x,a));
         }
 	}
 }
