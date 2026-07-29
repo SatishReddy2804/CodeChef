@@ -15,11 +15,10 @@ class Codechef
 		    int y=sc.nextInt();
 		    int z=sc.nextInt();
 		    int i=0;
-		    boolean f=false;
-		    int a=0;
+		    int a=-1;
 		    for(i=1;i<1001;i++)
 		    {
-		        if(i*(z-y)==x || z-y>x)
+		        if(x+i*y>=z)
 		        {
 		            f=true;
 		            a=i;
