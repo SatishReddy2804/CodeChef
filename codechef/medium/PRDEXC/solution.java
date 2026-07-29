@@ -11,23 +11,43 @@ class Codechef
         int t=sc.nextInt();
         while(t-->0)
         {
-            int x=sc.nextInt();
+             int x=sc.nextInt();
             int y=sc.nextInt();
             int p=sc.nextInt();
-            int z=0;
+            int moves=0;
             while(x*y<p)
             {
-                if(x>y)
+                int iX=(x+1)*y;
+                int iY=x*(y+1);
+                if(iX>=p && iY>=p)
+                {
+                    moves++;
+                    break;
+                }
+                else if(iX>=p)
                 {
                     x++;
+                    moves++;
+                    break;
+                }else if(iY>=p)
+                {
+                    y++;
+                    moves++;
+                    break;
                 }
                 else
                 {
-                    y++;
+                    if(x<y)
+                    {
+                        x++;
+                    }else
+                    {
+                        y++;
+                    }
+                    moves++;
                 }
-                z++;
             }
-            System.out.println(z);
+            System.out.println(moves);
         }
 	}
 }
