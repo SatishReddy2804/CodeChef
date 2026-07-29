@@ -14,17 +14,25 @@ class Codechef
 		    int x=sc.nextInt();
 		    int y=sc.nextInt();
 		    int z=sc.nextInt();
-		    int i=0;
-		    int a=-1;
-		    for(i=1;i<1001;i++)
+		    int c=0;
+		    int m=0;
+		    boolean b=false;
+		    while(m<=1000)
 		    {
-		        if(x+i*y>=z)
+		        m++;
+		        x+=y;
+		        c+=z;
+		        if(c>=x)
 		        {
-		            a=i;
+		            System.out.println(m);
+		            b=true;
 		            break;
 		        }
 		    }
-		    System.out.println(a);
+		    if(!b)
+		    {
+		        System.out.println("-1");
+		    }
 		}
 	}
 }
