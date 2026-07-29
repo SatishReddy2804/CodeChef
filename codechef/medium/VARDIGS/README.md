@@ -59,7 +59,7 @@ $48$ has two different digits $4$ and $8$, so it is  *varied*.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T14:47:25.011Z  
+**Submitted:** 2026-07-29T14:48:01.989Z  
 
 ```java
 import java.util.*;
