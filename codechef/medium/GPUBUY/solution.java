@@ -19,10 +19,11 @@ class Codechef
 		    int a=0;
 		    for(i=1;i<1001;i++)
 		    {
-		        if(i*(z-y)==x)
+		        if(i*(z-y)==x || z-y>x)
 		        {
 		            f=true;
 		            a=i;
+		            break;
 		        }
 		    }
 		    if(f)
