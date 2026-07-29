@@ -20,20 +20,11 @@ class Codechef
 		    {
 		        if(x+i*y>=z)
 		        {
-		            f=true;
 		            a=i;
 		            break;
 		        }
 		    }
-		    if(f)
-		    {
-		        System.out.println(a);
-		    }
-		    else
-		    {
-		        System.out.println("-1");
-		    }
+		    System.out.println(a);
 		}
-
 	}
 }
