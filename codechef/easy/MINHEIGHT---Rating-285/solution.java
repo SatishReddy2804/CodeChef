@@ -1,19 +1,17 @@
 import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Main{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        int t=sc.nextInt();
-        while(t-->0)
-        {
-            int a=sc.nextInt();
-            int b=sc.nextInt();
-            System.out.println((a>=b)?"YES":"NO");
+        int T=sc.nextInt();
+        while(T-->0){
+            int X=sc.nextInt();
+            int H=sc.nextInt();
+            if(X>=H){
+                System.out.println("YES");
+            }else{
+                System.out.println("NO");
+            }
         }
-	}
+        sc.close();
+    }
 }
