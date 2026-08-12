@@ -14,7 +14,7 @@ class Codechef
             int n=sc.nextInt();
             int m=sc.nextInt();
             int x=sc.nextInt();
-            int s=(x-1)/m+1;
+            int s=(x-1)%m+1;
             int res=Math.min(s,m-s+1);
             System.out.println(res);
         }
