@@ -14,15 +14,9 @@ class Codechef
             int n=sc.nextInt();
             int m=sc.nextInt();
             int x=sc.nextInt();
-            int z=x/m;
-            if(n==1)
-            {
-                System.out.println("1");
-            }
-            else
-            {
-                System.out.println(Math.abs(Math.min(z-n,m-z)));
-            }
+            int s=(x-1)%m+1;
+            int res=Math.min(s,m-s+1);
+            System.out.println(res);
         }
 	}
 }
