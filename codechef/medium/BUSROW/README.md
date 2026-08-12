@@ -74,7 +74,7 @@ It's optimal to enter from the back, and walk through rows $6, 5, 4$ to reach it
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:07:56.296Z  
+**Submitted:** 2026-08-12T15:14:49.147Z  
 
 ```java
 import java.util.*;
@@ -93,15 +93,9 @@ class Codechef
             int n=sc.nextInt();
             int m=sc.nextInt();
             int x=sc.nextInt();
-            int z=x/m;
-            if(n==1)
-            {
-                System.out.println("1");
-            }
-            else
-            {
-                System.out.println(Math.abs(Math.min(z-n,m-z)));
-            }
+            int s=(x-1)%m+1;
+            int res=Math.min(s,m-s+1);
+            System.out.println(res);
         }
 	}
 }
