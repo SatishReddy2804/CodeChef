@@ -76,16 +76,15 @@ Bob can thus eat all the chocolates without ever giving Alice a turn - so Alice 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:16:11.009Z  
+**Submitted:** 2026-08-12T16:19:44.019Z  
 
 ```java
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-    public int boolean alice(int arr[],int sum)
+class Codechef{
+    static boolean alice(int arr[],int sum)
     {
         for(int i=0;i<arr.length;i++)
         {
@@ -97,7 +96,7 @@ class Codechef
         }
         return false;
     }
-    public int boolean bob(int arr[],int sum)
+    static boolean bob(int arr[],int sum)
     {
         for(int i=0;i<arr.length;i++)
         {
@@ -107,8 +106,7 @@ class Codechef
                 {
                     arr[i]-=2;
                     return true;
-                }
-                else
+                }else
                 {
                     arr[i]-=1;
                     return true;
@@ -117,9 +115,7 @@ class Codechef
         }
         return false;
     }
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+    public static void main(String[] args)throws java.lang.Exception{
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0)
@@ -133,21 +129,32 @@ class Codechef
                 arr[i]=sc.nextInt();
                 sum+=arr[i];
             }
-            while(sum%2==0)
+            while(sum>0)
             {
-                if(alice(arr,sum))
+                if(sum%2==0)
                 {
-                    int c+=2;
-                    sum-=2;
+                    if(alice(arr,sum))
+                    {
+                        c+=2;
+                        sum-=2;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }else{
+                    if(bob(arr,sum))
+                    {
+                        sum--;
+                    }else
+                    {
+                        break;
+                    }
                 }
-                else
-                {
-                    bob(arr,sum);
-                }
-                
             }
+            System.out.println(c);
         }
-	}
+    }
 }
 
 ```
