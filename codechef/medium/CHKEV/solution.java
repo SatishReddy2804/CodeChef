@@ -9,8 +9,8 @@ class Codechef
 		// your code goes here
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        int b=sc.nextint();
-        int falg=0;
+        int b=sc.nextInt();
+        int flag=0;
         for(int i=a;i<=b;i++)
         {
             if(i%2==0)
@@ -19,6 +19,6 @@ class Codechef
                 break;
             }
         }
-        System.out.println((flag==1)>"YES":"NO");
+        System.out.println((flag==1)?"YES":"NO");
 	}
 }
