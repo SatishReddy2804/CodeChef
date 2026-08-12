@@ -61,7 +61,8 @@ class Codechef{
                     {
                         break;
                     }
-                }else{
+                }else
+                {
                     if(bob(arr,sum))
                     {
                         sum--;
