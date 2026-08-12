@@ -88,7 +88,7 @@ $6$ is even, so the answer is `Yes`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:57:38.586Z  
+**Submitted:** 2026-08-12T14:58:25.350Z  
 
 ```java
 import java.util.*;
@@ -102,8 +102,8 @@ class Codechef
 		// your code goes here
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        int b=sc.nextint();
-        int falg=0;
+        int b=sc.nextInt();
+        int flag=0;
         for(int i=a;i<=b;i++)
         {
             if(i%2==0)
@@ -112,7 +112,7 @@ class Codechef
                 break;
             }
         }
-        System.out.println((flag==1)>"YES":"NO");
+        System.out.println((flag==1)?"YES":"NO");
 	}
 }
 
