@@ -74,7 +74,7 @@ It's optimal to enter from the back, and walk through rows $6, 5, 4$ to reach it
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:19:02.160Z  
+**Submitted:** 2026-08-12T15:17:33.162Z  
 
 ```java
 import java.util.*;
