@@ -76,7 +76,7 @@ Bob can thus eat all the chocolates without ever giving Alice a turn - so Alice 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:16:04.028Z  
+**Submitted:** 2026-08-12T16:16:11.009Z  
 
 ```java
 import java.util.*;
