@@ -2,11 +2,8 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
+class Codechef{
+    public static void main(String[] args)throws java.lang.Exception{
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0)
@@ -17,30 +14,22 @@ class Codechef
             {
                 z=0;
             }
-            else if(x%3==1)
-            {
-                while(x%5!=0 || x%3!=0)
-                {
-                    x++;
-                    z=1;
-                }
-                if(x%3==0)
-                {
-                    z=1;
-                }
-                if((x+1)%3==0)
-                {
-                    z++;
-                }
+            else if((x+1)%3==0){
+                z=1;
             }
             else
             {
-                if((x+1)%3==0)
+                int n5=((x/5)+1)*5;
+                if(n5%3==0)
                 {
-                    z++;
+                    z=1;
+                }
+                else
+                {
+                    z=2;
                 }
             }
             System.out.println(z);
         }
-	}
+    }
 }
