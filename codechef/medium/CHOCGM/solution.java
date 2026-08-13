@@ -2,8 +2,9 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef{
-    static boolean alice(int arr[],int sum)
+class Codechef
+{
+    public int boolean alice(int arr[],int sum)
     {
         for(int i=0;i<arr.length;i++)
         {
@@ -15,7 +16,7 @@ class Codechef{
         }
         return false;
     }
-    static boolean bob(int arr[],int sum)
+    public int boolean bob(int arr[],int sum)
     {
         for(int i=0;i<arr.length;i++)
         {
@@ -25,7 +26,8 @@ class Codechef{
                 {
                     arr[i]-=2;
                     return true;
-                }else
+                }
+                else
                 {
                     arr[i]-=1;
                     return true;
@@ -34,7 +36,9 @@ class Codechef{
         }
         return false;
     }
-    public static void main(String[] args)throws java.lang.Exception{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0)
@@ -48,31 +52,19 @@ class Codechef{
                 arr[i]=sc.nextInt();
                 sum+=arr[i];
             }
-            while(sum>0)
+            while(sum%2==0)
             {
-                if(sum%2==0)
+                if(alice(arr,sum))
                 {
-                    if(alice(arr,sum))
-                    {
-                        c+=2;
-                        sum-=2;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }else
-                {
-                    if(bob(arr,sum))
-                    {
-                        sum--;
-                    }else
-                    {
-                        break;
-                    }
+                    int c+=2;
+                    sum-=2;
                 }
+                else
+                {
+                    bob(arr,sum);
+                }
+                
             }
-            System.out.println(c);
         }
-    }
+	}
 }
