@@ -8,18 +8,21 @@ class Codechef
 	{
 		// your code goes here
         Scanner sc=new Scanner(System.in);
-        int x=sc.nextInt();
-        if(x==1)
+        int n=sc.nextInt();
+        int r=n%3;
+        int ans;
+        if(r==0)
         {
-            System.out.println("0");
+            ans=n;
+        }
+        else if
+        (r==1){
+            ans=n-1;
         }
         else
         {
-            while(x%3!=0)
-            {
-                x++;
-            }
-            System.out.println(x);
+            ans=n+1;
         }
+        System.out.println(ans);
 	}
 }
