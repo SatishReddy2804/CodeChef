@@ -83,7 +83,7 @@ $9$ is itself a multiple of $3$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T13:13:53.609Z  
+**Submitted:** 2026-08-19T13:15:16.827Z  
 
 ```java
 import java.util.*;
