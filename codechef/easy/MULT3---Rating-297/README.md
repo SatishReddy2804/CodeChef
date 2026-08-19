@@ -83,7 +83,7 @@ $9$ is itself a multiple of $3$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T13:15:23.528Z  
+**Submitted:** 2026-08-19T13:19:07.443Z  
 
 ```java
 import java.util.*;
@@ -96,19 +96,22 @@ class Codechef
 	{
 		// your code goes here
         Scanner sc=new Scanner(System.in);
-        int x=sc.nextInt();
-        if(x==1)
+        int n=sc.nextInt();
+        int r=n%3;
+        int ans;
+        if(r==0)
         {
-            System.out.println("0");
+            ans=n;
+        }
+        else if
+        (r==1){
+            ans=n-1;
         }
         else
         {
-            while(x%3!=0)
-            {
-                x++;
-            }
-            System.out.println(x);
+            ans=n+1;
         }
+        System.out.println(ans);
 	}
 }
 
