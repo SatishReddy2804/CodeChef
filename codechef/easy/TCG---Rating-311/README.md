@@ -80,7 +80,7 @@ The updated value of capital gain tax is same as the previous value.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-01T02:05:51.237Z  
+**Submitted:** 2026-09-01T02:06:39.813Z  
 
 ```java
 import java.util.*;
@@ -95,6 +95,7 @@ class Codechef
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
         int y=sc.nextInt();
+        if(x==y) System.out.println("SAME");
         System.out.println((x>y)?"DECREASED":"INCREASED");
 	}
 }
