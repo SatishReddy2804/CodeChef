@@ -11,6 +11,10 @@ class Codechef
         int x=sc.nextInt();
         int y=sc.nextInt();
         if(x==y) System.out.println("SAME");
-        System.out.println((x>y)?"DECREASED":"INCREASED");
+        else if(x<y) System.out.println("INCREASED");
+        else
+        {
+            System.out.println("DECREASED");
+        }
 	}
 }
