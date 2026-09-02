@@ -10,6 +10,7 @@ class Codechef
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
         int y=sc.nextInt();
-        System.out.println((x+y>=200)?"YES":"NO");
+        int a=x+y;
+        System.out.println((a>=2000)?"YES":"NO");
 	}
 }
