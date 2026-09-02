@@ -64,7 +64,7 @@ Chef's current rating is $1999$, and his rating decreases by $10$. So, his new r
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:00:24.430Z  
+**Submitted:** 2026-09-02T15:02:23.125Z  
 
 ```java
 import java.util.*;
@@ -79,7 +79,8 @@ class Codechef
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
         int y=sc.nextInt();
-        System.out.println((x+y>=200)?"YES":"NO");
+        int a=x+y;
+        System.out.println((a>=2000)?"YES":"NO");
 	}
 }
 
