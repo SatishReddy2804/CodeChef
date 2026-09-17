@@ -73,7 +73,7 @@ So, a penalty session will be carried out.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T13:37:03.113Z  
+**Submitted:** 2026-09-17T01:54:21.226Z  
 
 ```java
 import java.util.*;
