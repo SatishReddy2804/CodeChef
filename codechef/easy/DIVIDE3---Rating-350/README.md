@@ -64,7 +64,7 @@ You can give friend $1$ $2$ toffees and friends $2$ and $3$, $3$ toffees each. T
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T04:59:20.996Z  
+**Submitted:** 2026-09-24T05:00:56.620Z  
 
 ```java
 import java.util.*;
@@ -78,9 +78,9 @@ class Codechef
 		// your code goes here
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
-        if(x%3==2)
+        if(x%3==0)
         {
-            System.out.println("1");
+            System.out.println("0");
 	    }
 	    else if(x%3==1)
 	    {
@@ -88,7 +88,7 @@ class Codechef
 	    }
 	    else
 	    {
-	        System.out.println("0");
+	        System.out.println("1");
 	    }
 	}
 }
