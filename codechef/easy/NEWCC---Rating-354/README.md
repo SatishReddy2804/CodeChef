@@ -68,7 +68,7 @@ The old one is faster.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-25T02:41:24.436Z  
+**Submitted:** 2026-09-25T02:44:18.199Z  
 
 ```java
 import java.util.*;
@@ -83,8 +83,9 @@ class Codechef
         Scanner sc=new Scanner(System.in);
         int x=sc.nextInt();
         int y=sc.nextInt();
-        System.out.println((x<y)?"Old":"New");
-        
+        if(x==y) System.out.println("Same");
+        else if(x<y) System.out.println("Old");
+        else System.out.println("New");
 	}
 }
 
