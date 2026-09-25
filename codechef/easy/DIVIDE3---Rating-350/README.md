@@ -64,7 +64,7 @@ You can give friend $1$ $2$ toffees and friends $2$ and $3$, $3$ toffees each. T
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T05:01:26.002Z  
+**Submitted:** 2026-09-24T05:01:19.999Z  
 
 ```java
 import java.util.*;
