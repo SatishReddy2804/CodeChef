@@ -11,7 +11,11 @@ class Codechef
         String s=sc.nextLine();
         if(s.equals("WECNITK"))
         {
-            System.out.println("Message");
+            System.out.println("Welcome to Web Club!");
+        }
+        else
+        {
+            
         }
 	}
 }
