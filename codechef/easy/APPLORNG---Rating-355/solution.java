@@ -11,6 +11,6 @@ class Codechef
         int x=sc.nextInt();
         int y=sc.nextInt();
         int z=sc.nextInt();
-        System.out.println((x-(y+z)>0)?"YES":"NO");
+        System.out.println((x>=y+z)?"YES":"NO");
 	}
 }
