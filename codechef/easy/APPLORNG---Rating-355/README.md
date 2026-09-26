@@ -98,7 +98,7 @@ The cost of buying $1$ kg each of apple and orange is $5000+6000 = 11000$. Since
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-26T01:55:52.611Z  
+**Submitted:** 2026-09-26T01:57:48.019Z  
 
 ```java
 import java.util.*;
@@ -114,7 +114,7 @@ class Codechef
         int x=sc.nextInt();
         int y=sc.nextInt();
         int z=sc.nextInt();
-        System.out.println((x-(y+z)>0)?"YES":"NO");
+        System.out.println((x>=y+z)?"YES":"NO");
 	}
 }
 
