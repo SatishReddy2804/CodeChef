@@ -64,7 +64,7 @@ The access code entered does not match the expected one, so you are not granted 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-26T15:36:10.710Z  
+**Submitted:** 2026-09-26T15:36:28.694Z  
 
 ```java
 import java.util.*;
@@ -80,7 +80,11 @@ class Codechef
         String s=sc.nextLine();
         if(s.equals("WECNITK"))
         {
-            System.out.println("Message");
+            System.out.println("Welcome to Web Club!");
+        }
+        else
+        {
+            
         }
 	}
 }
