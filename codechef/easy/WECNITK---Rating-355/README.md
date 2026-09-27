@@ -64,7 +64,7 @@ The access code entered does not match the expected one, so you are not granted 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-26T15:36:28.694Z  
+**Submitted:** 2026-09-27T05:46:37.836Z  
 
 ```java
 import java.util.*;
@@ -84,7 +84,7 @@ class Codechef
         }
         else
         {
-            
+            System.out.println("Access denied");
         }
 	}
 }
