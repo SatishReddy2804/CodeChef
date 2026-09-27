@@ -15,7 +15,7 @@ class Codechef
         }
         else
         {
-            
+            System.out.println("Access denied");
         }
 	}
 }
