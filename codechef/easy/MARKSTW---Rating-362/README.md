@@ -55,7 +55,7 @@ Alice has scored $X = 1$ mark whereas Bob has scored $Y = 2$ marks. As Alice has
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T04:23:55.765Z  
+**Submitted:** 2026-09-30T04:24:08.217Z  
 
 ```java
 import java.util.*;
