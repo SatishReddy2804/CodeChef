@@ -62,7 +62,7 @@ Chef can put $2$ cakes in each of the $2$ vehicles.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T05:51:02.517Z  
+**Submitted:** 2026-10-27T08:34:03.629Z  
 
 ```java
 import java.util.*;
