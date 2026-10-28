@@ -61,7 +61,7 @@ Even if Om uses the whole Gymkhana fund, he won't be able to buy the laptop.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-25T03:54:56.832Z  
+**Submitted:** 2026-10-28T04:53:04.992Z  
 
 ```java
 import java.util.*;
