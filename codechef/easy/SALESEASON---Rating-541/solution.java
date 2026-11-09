@@ -20,7 +20,7 @@ class Codechef
 		    {
 		        System.out.println(x-25);
 		    }
-		    else if(x<=500)
+		    else if(x<=5000)
 		    {
 		        System.out.println(x-100);
 		    }
