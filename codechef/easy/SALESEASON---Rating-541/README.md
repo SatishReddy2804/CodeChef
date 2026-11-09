@@ -57,7 +57,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-09T02:00:29.882Z  
+**Submitted:** 2026-11-09T02:01:48.961Z  
 
 ```java
 import java.util.*;
@@ -82,7 +82,7 @@ class Codechef
 		    {
 		        System.out.println(x-25);
 		    }
-		    else if(x<=500)
+		    else if(x<=5000)
 		    {
 		        System.out.println(x-100);
 		    }
